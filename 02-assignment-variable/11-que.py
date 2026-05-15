@@ -1,16 +1,8 @@
-employee_name = input("Enter your name : ")
-employee_id = int(input("Enter you ID :"))
-employee_exp = int(input("Enter your experience :"))
-if employee_exp >= 10 :
-    salary = 80000
-    print(f"""Senior Employee 
-Salary : {salary}""")
-    if employee_exp >= 15 :
-       salary = salary + 5000
-       print(f"""Experience exceeds more than 15 years Bonus added
-Salary : {salary}""")
+#Predefined valid usernames and corresponding passwords
 
-elif employee_exp >= 5 and employee_exp <= 9 :
-    salary = 50000
-    print(f"""Mid-level Employee
-Salary : {salary}""")
+username1 = input("Enter your username : ")
+username_password1 = input("Enter your password : ")
+if username1 == "user1" and username_password1 == "pass@123":
+    print("Authentication successfull")
+else:
+    print("Authentication failed")  

@@ -1,16 +1,16 @@
-# Library Charge Calculation 
+employee_name = input("Enter your name : ")
+employee_id = int(input("Enter you ID :"))
+employee_exp = int(input("Enter your experience :"))
+if employee_exp >= 10 :
+    salary = 80000
+    print(f"""Senior Employee 
+Salary : {salary}""")
+    if employee_exp >= 15 :
+       salary = salary + 5000
+       print(f"""Experience exceeds more than 15 years Bonus added
+Salary : {salary}""")
 
-days = int(input("Enter number of days : "))
-if days <= 5 :
-    charge = days * 2
-    print(f"Calculated : {charge}")
-elif days >= 6 and days <= 10 :
-    charge = days * 3
-    print(f"Calculated : {charge}")
-elif days >= 11 and days <=15 :
-    charge = days * 4
-    print(f"Calculated : {charge}")
-else :
-    charge = days * 5
-    print(f"Calculated : {charge}")
-    
+elif employee_exp >= 5 and employee_exp <= 9 :
+    salary = 50000
+    print(f"""Mid-level Employee
+Salary : {salary}""")
